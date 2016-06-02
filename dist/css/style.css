@@ -1,0 +1,53 @@
+form {
+  background-color: #220022;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 15%; }
+  form .input-group {
+    margin-bottom: 20px; }
+  form .form-control {
+    border-radius: 0px 4px 4px 0px !important; }
+  form .dropdown {
+    text-align: center; }
+    form .dropdown .btn {
+      margin-left: 20px; }
+
+@media only screen and (max-width: 620px) {
+  form {
+    width: 90%;
+    margin-left: 5%; } }
+
+@media only screen and (max-width: 488px) {
+  form {
+    width: 98%;
+    margin-left: 1%;
+    padding: 15px; } }
+
+.header {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.image {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.mapdiv {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px; }
+
+.table {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px; }
+  .table td, .table th {
+    vertical-align: middle !important;
+    text-align: center !important; }
+  .table .single {
+    background-color: #f9f9f9; }
