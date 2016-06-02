@@ -12,10 +12,7 @@ export default class Schedule extends Component {
   }
 
   render() {
-    // console.log('hw');
-    // console.log(this.props.result);
     return (
-      // <div>hw</div>
       <table className="table table-hover">
         <thead>
           <tr>

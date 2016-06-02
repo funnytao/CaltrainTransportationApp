@@ -13,6 +13,7 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
+var cleanCSS = require('gulp-clean-css');
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -24,10 +25,10 @@ gulp.task('sass', function () {
     gulp.src('./sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(rename('style.min.css'))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'));
-        // .pipe(rename('style.min.css'))
-        // .pipe(uglify())
-        // .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('html', function() {

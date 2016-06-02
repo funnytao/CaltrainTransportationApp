@@ -4,7 +4,7 @@ this.addEventListener('install', function(event) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/css/style.css',
+        '/css/style.min.css',
         '/js/all.min.js',
         '/js/googlemap.js',
         '/css/bootstrap.min.css',

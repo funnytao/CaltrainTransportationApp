@@ -68,7 +68,6 @@ class SearchBar extends Component {
       });
     });
     this.setState({ result });
-    console.log(this.state.result);
   }
 
   constructor(props) {

@@ -31,7 +31,6 @@ export default class Directions extends Component {
 
   render() {
     const { origin, directions } = this.state;
-    console.log('changed');
     return (
       <GoogleMapLoader
         containerElement={ <div style={{height: '100%'}} />}
