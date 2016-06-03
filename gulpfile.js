@@ -3,7 +3,6 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var react = require('gulp-react');
-var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
